@@ -1,0 +1,10 @@
+node_modules
+
+# file
+.DS_Store
+.env
+
+# hardhat
+artifacts
+cache
+typechain-types
