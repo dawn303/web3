@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "module": "commonjs", // node不支持amd，浏览器不支持commonjs
+        "esModuleInterop": true, // 兼容性选项，仅仅为了通过类型检查，允许从没有设置过默认导出的模块中默认导入
+        "forceConsistentCasingInFileNames": true, // 涉及模块导入时，文件名的大小写都需要匹配
+        "strict": true,
+        "skipLibCheck": true, // 忽略所有以“.d.ts”为后缀的文件的编译检查
+        "resolveJsonModule": true // 支持导入 JSON 文件并将其作为模块处理
+    }
+}
