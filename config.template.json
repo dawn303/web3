@@ -1,0 +1,22 @@
+[
+    {
+        "enabled": true,
+        "network": "Testnet",
+        "baseUrl": "",
+        "tokenAddress": "",
+        "onlyAttribute": true,
+        "list": [
+            { "address": "", "tokenId": 1 },
+            { "address": "", "tokenId": 2 },
+            { "address": "", "tokenId": 3 }
+        ]
+    },
+    {
+        "enabled": false,
+        "network": "Mainnet",
+        "baseUrl": "",
+        "tokenAddress": "",
+        "onlyAttribute": true,
+        "list": []
+    }
+]
