@@ -6,7 +6,7 @@ const MNEMONIC = vars.get("MNEMONIC");
 const ANKR_APIKEY = vars.get("ANKR_APIKEY");
 
 const config: HardhatUserConfig = {
-    defaultNetwork: "bsctest",
+    defaultNetwork: "hardhat",
     networks: {
         hardhat: {},
         bsctest: {

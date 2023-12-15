@@ -3,6 +3,16 @@ import { getMetadataByTokenId } from "./request";
 import { NyatheesOVO } from "../typechain-types";
 import configs from "../config.json";
 
+// 在写这个脚本时遇到的问题，及解决的方法
+//
+// 1.vscode编辑器没有智能提示  ==>  解决：将hardhat和typescript的依赖全部安装
+//
+// 2.attach加载合约，不会自动补全和智能提示  ==> 解决：使用 ethers.getContractAt
+//
+// 3.调用ownerOf判断是否mint过时，合约报错  ==> 解决：ERC721中对没有mint的id会报错，通过new Promise封装一个方法来避开报错，即getAddressByTokenId方法
+//
+// 4.使用typescript调用接口，解析返回数据，需要定义接口来表示数据结构
+
 async function main() {
     // Config
     const config = getMintConfig();
