@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.15;
+pragma solidity ^0.8.13;
 
 // 从ERC20的标准实现，窥探solidity开发的注意事项
 // 深入理解ERC20及其实践

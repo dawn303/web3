@@ -4,6 +4,7 @@ import "@nomicfoundation/hardhat-foundry";
 
 const MNEMONIC = vars.get("MNEMONIC");
 const ANKR_APIKEY = vars.get("ANKR_APIKEY");
+const BSC_API_KEY = vars.get("BSC_API_KEY");
 
 const config: HardhatUserConfig = {
     defaultNetwork: "hardhat",
@@ -11,6 +12,8 @@ const config: HardhatUserConfig = {
         hardhat: {},
         bsctest: {
             url: `https://rpc.ankr.com/bsc_testnet_chapel/${ANKR_APIKEY}`,
+            chainId: 97,
+            gas: 99000000,
             accounts: {
                 mnemonic: MNEMONIC,
                 path: "m/44'/60'/0'/0",
@@ -20,8 +23,13 @@ const config: HardhatUserConfig = {
             },
         },
     },
+    etherscan: {
+        apiKey: {
+            bscTestnet: BSC_API_KEY,
+        },
+    },
     solidity: {
-        version: "0.8.18",
+        version: "0.8.13",
         settings: {
             optimizer: {
                 enabled: true,
